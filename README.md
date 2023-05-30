@@ -10,5 +10,6 @@ DSL simulates a virtual soccer league made up of 20 teams which have all played 
 - [X] Generate 20 unique soccer teams similar to real teams
 - [X] Implement logic to ensure that each team plays every other team twice and the results of each fixture will depend on a random number range: 0...5
 - [X] Based on the results, show the final league standings ordered by the team with highest accumulated points in a descending order
-- [ ] Refactor and clean up crew
+- [X] Make table rows selectable so that it shows team information based on selected row in another view controller
+- [X] Refactor and clean up crew
 

@@ -80,6 +80,9 @@ struct LeagueManager {
     }
     
     mutating func generateResults() {
+        
+        // Clearing fixture array before generating
+        var updatedFixtures: [[(homeTeam: Team, awayTeam: Team, homeGoals: Int, awayGoals: Int)]] = []
 
         // Generating results for each match
         for roundFixtures in fixtures {
@@ -94,30 +97,31 @@ struct LeagueManager {
                 var updatedHomeTeam = fixture.homeTeam
                 var updatedAwayTeam = fixture.awayTeam
 
-                // get results from the matches
+                // get and accumulate the results from the matches
                 if homeGoals > awayGoals {
                     updatedHomeTeam.points += 3
+                    updatedAwayTeam.points += 0
                 } else if homeGoals < awayGoals {
+                    updatedHomeTeam.points += 0
                     updatedAwayTeam.points += 3
                 } else {
                     updatedHomeTeam.points += 1
                     updatedAwayTeam.points += 1
                 }
 
-                // Updating the goal difference for each team
-                let homeGoalDifference = homeGoals - awayGoals
-                let awayGoalDifference = awayGoals - homeGoals
-
-                updatedHomeTeam.goalDifference += homeGoalDifference
-                updatedAwayTeam.goalDifference += awayGoalDifference
+                updatedHomeTeam.goalDifference += homeGoals - awayGoals
+                updatedAwayTeam.goalDifference += awayGoals - homeGoals
 
                 roundResults.append((homeTeam: updatedHomeTeam, awayTeam: updatedAwayTeam, homeGoals: homeGoals, awayGoals: awayGoals))
 
             }
 
-            fixtures.append(roundResults)
+            updatedFixtures.append(roundResults)
 
         }
+        
+        // Update the fixtures
+        fixtures = updatedFixtures
 
     }
     

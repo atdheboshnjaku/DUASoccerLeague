@@ -19,6 +19,7 @@
 		ADC0D7162A263C3A00FF2E2F /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0D7142A263C3A00FF2E2F /* TeamCell.swift */; };
 		ADC0D7172A263C3A00FF2E2F /* TeamCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADC0D7152A263C3A00FF2E2F /* TeamCell.xib */; };
 		ADC0D7192A2653EE00FF2E2F /* appScreenShot.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC0D7182A2653EE00FF2E2F /* appScreenShot.png */; };
+		ADC0D71B2A265BD300FF2E2F /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0D71A2A265BD300FF2E2F /* TeamViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		ADC0D7142A263C3A00FF2E2F /* TeamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
 		ADC0D7152A263C3A00FF2E2F /* TeamCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamCell.xib; sourceTree = "<group>"; };
 		ADC0D7182A2653EE00FF2E2F /* appScreenShot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appScreenShot.png; sourceTree = "<group>"; };
+		ADC0D71A2A265BD300FF2E2F /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				ADC0D6F72A25EA4900FF2E2F /* ViewController.swift */,
+				ADC0D71A2A265BD300FF2E2F /* TeamViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				ADC0D6F82A25EA4900FF2E2F /* ViewController.swift in Sources */,
 				ADC0D6F42A25EA4900FF2E2F /* AppDelegate.swift in Sources */,
 				ADC0D6F62A25EA4900FF2E2F /* SceneDelegate.swift in Sources */,
+				ADC0D71B2A265BD300FF2E2F /* TeamViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
