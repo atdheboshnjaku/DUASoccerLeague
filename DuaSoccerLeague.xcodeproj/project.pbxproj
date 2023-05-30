@@ -15,6 +15,7 @@
 		ADC0D7002A25EA4A00FF2E2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC0D6FE2A25EA4A00FF2E2F /* LaunchScreen.storyboard */; };
 		ADC0D70B2A25EF2900FF2E2F /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0D70A2A25EF2900FF2E2F /* Team.swift */; };
 		ADC0D70D2A25FAD800FF2E2F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ADC0D70C2A25FAD700FF2E2F /* README.md */; };
+		ADC0D7122A26213D00FF2E2F /* LeagueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0D7112A26213D00FF2E2F /* LeagueManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		ADC0D7012A25EA4A00FF2E2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADC0D70A2A25EF2900FF2E2F /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		ADC0D70C2A25FAD700FF2E2F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		ADC0D7112A26213D00FF2E2F /* LeagueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				ADC0D70A2A25EF2900FF2E2F /* Team.swift */,
+				ADC0D7112A26213D00FF2E2F /* LeagueManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADC0D7122A26213D00FF2E2F /* LeagueManager.swift in Sources */,
 				ADC0D70B2A25EF2900FF2E2F /* Team.swift in Sources */,
 				ADC0D6F82A25EA4900FF2E2F /* ViewController.swift in Sources */,
 				ADC0D6F42A25EA4900FF2E2F /* AppDelegate.swift in Sources */,
