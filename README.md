@@ -1,3 +1,5 @@
+![DUASoccerLeague](https://raw.githubusercontent.com/atdheboshnjaku/Bingeer/a0c8e23f1360262c18870a88d5eb43a0de7880b5/Bingeer.svg)
+
 # DUA Soccer League Challenge
 
 DSL simulates a virtual soccer league made up of 20 teams which have all played against each other. Each fixtures results is generated randomly from a range of 0...5 so the final result is completely random. Then the final league standings are displayed in a table view.
