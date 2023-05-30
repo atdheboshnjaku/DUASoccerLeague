@@ -14,6 +14,7 @@
 		ADC0D6FD2A25EA4A00FF2E2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC0D6FC2A25EA4A00FF2E2F /* Assets.xcassets */; };
 		ADC0D7002A25EA4A00FF2E2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC0D6FE2A25EA4A00FF2E2F /* LaunchScreen.storyboard */; };
 		ADC0D70B2A25EF2900FF2E2F /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0D70A2A25EF2900FF2E2F /* Team.swift */; };
+		ADC0D70D2A25FAD800FF2E2F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ADC0D70C2A25FAD700FF2E2F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		ADC0D6FF2A25EA4A00FF2E2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADC0D7012A25EA4A00FF2E2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADC0D70A2A25EF2900FF2E2F /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		ADC0D70C2A25FAD700FF2E2F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		ADC0D6E72A25EA4900FF2E2F = {
 			isa = PBXGroup;
 			children = (
+				ADC0D70C2A25FAD700FF2E2F /* README.md */,
 				ADC0D6F22A25EA4900FF2E2F /* DuaSoccerLeague */,
 				ADC0D6F12A25EA4900FF2E2F /* Products */,
 			);
@@ -154,6 +157,7 @@
 			files = (
 				ADC0D7002A25EA4A00FF2E2F /* LaunchScreen.storyboard in Resources */,
 				ADC0D6FD2A25EA4A00FF2E2F /* Assets.xcassets in Resources */,
+				ADC0D70D2A25FAD800FF2E2F /* README.md in Resources */,
 				ADC0D6FB2A25EA4900FF2E2F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
