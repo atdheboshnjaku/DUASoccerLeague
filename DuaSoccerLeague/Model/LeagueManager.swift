@@ -10,6 +10,7 @@ import Foundation
 struct LeagueManager {
     
     var teams: [Team] = []
+    var fixtures: [[(homeTeam: Team, awayTeam: Team, homeGoals: Int, awayGoals: Int)]] = []
     
     mutating func generateTeams() {
         
@@ -46,6 +47,77 @@ struct LeagueManager {
             
         }
         
+    }
+    
+    mutating func generateFixtures() {
+        
+        // Shuffle the teams array so fixtures are random
+        var shuffledTeams = teams.shuffled()
+        
+        // Creating fixtures for each team
+        for i in 0..<shuffledTeams.count {
+            
+            var matches: [(homeTeam: Team, awayTeam: Team, homeGoals: Int, awayGoals: Int)] = []
+            
+            for j in 0..<shuffledTeams.count {
+                
+                if i != j {
+                    
+                    let homeTeam = shuffledTeams[i]
+                    let awayTeam = shuffledTeams[j]
+                    
+                    matches.append((homeTeam: homeTeam, awayTeam: awayTeam, homeGoals: 0, awayGoals: 0))
+                    
+                }
+                
+            }
+            
+            fixtures.append(matches)
+            
+        }
+        
+    }
+    
+    mutating func generateResults() {
+
+        // Generating results for each match
+        for roundFixtures in fixtures {
+
+            var roundResults: [(homeTeam: Team, awayTeam: Team, homeGoals: Int, awayGoals: Int)] = []
+
+            for fixture in roundFixtures {
+
+                let homeGoals = Int.random(in: 0...5)
+                let awayGoals = Int.random(in: 0...5)
+
+                var updatedHomeTeam = fixture.homeTeam
+                var updatedAwayTeam = fixture.awayTeam
+
+                // get results from the matches
+                if homeGoals > awayGoals {
+                    updatedHomeTeam.points += 3
+                } else if homeGoals < awayGoals {
+                    updatedAwayTeam.points += 3
+                } else {
+                    updatedHomeTeam.points += 1
+                    updatedAwayTeam.points += 1
+                }
+
+                // Updating the goal difference for each team
+                let homeGoalDifference = homeGoals - awayGoals
+                let awayGoalDifference = awayGoals - homeGoals
+
+                updatedHomeTeam.goalDifference += homeGoalDifference
+                updatedAwayTeam.goalDifference += awayGoalDifference
+
+                roundResults.append((homeTeam: updatedHomeTeam, awayTeam: updatedAwayTeam, homeGoals: homeGoals, awayGoals: awayGoals))
+
+            }
+
+            fixtures.append(roundResults)
+
+        }
+
     }
     
 }

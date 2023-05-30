@@ -16,6 +16,8 @@
 		ADC0D70B2A25EF2900FF2E2F /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0D70A2A25EF2900FF2E2F /* Team.swift */; };
 		ADC0D70D2A25FAD800FF2E2F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ADC0D70C2A25FAD700FF2E2F /* README.md */; };
 		ADC0D7122A26213D00FF2E2F /* LeagueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0D7112A26213D00FF2E2F /* LeagueManager.swift */; };
+		ADC0D7162A263C3A00FF2E2F /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0D7142A263C3A00FF2E2F /* TeamCell.swift */; };
+		ADC0D7172A263C3A00FF2E2F /* TeamCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADC0D7152A263C3A00FF2E2F /* TeamCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		ADC0D70A2A25EF2900FF2E2F /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		ADC0D70C2A25FAD700FF2E2F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ADC0D7112A26213D00FF2E2F /* LeagueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueManager.swift; sourceTree = "<group>"; };
+		ADC0D7142A263C3A00FF2E2F /* TeamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
+		ADC0D7152A263C3A00FF2E2F /* TeamCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 		ADC0D7082A25ED2000FF2E2F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ADC0D7132A263B9100FF2E2F /* Cell */,
 				ADC0D6F92A25EA4900FF2E2F /* Main.storyboard */,
 				ADC0D6FE2A25EA4A00FF2E2F /* LaunchScreen.storyboard */,
 			);
@@ -98,6 +103,15 @@
 				ADC0D7112A26213D00FF2E2F /* LeagueManager.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		ADC0D7132A263B9100FF2E2F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ADC0D7142A263C3A00FF2E2F /* TeamCell.swift */,
+				ADC0D7152A263C3A00FF2E2F /* TeamCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADC0D7002A25EA4A00FF2E2F /* LaunchScreen.storyboard in Resources */,
+				ADC0D7172A263C3A00FF2E2F /* TeamCell.xib in Resources */,
 				ADC0D6FD2A25EA4A00FF2E2F /* Assets.xcassets in Resources */,
 				ADC0D70D2A25FAD800FF2E2F /* README.md in Resources */,
 				ADC0D6FB2A25EA4900FF2E2F /* Main.storyboard in Resources */,
@@ -174,6 +189,7 @@
 			files = (
 				ADC0D7122A26213D00FF2E2F /* LeagueManager.swift in Sources */,
 				ADC0D70B2A25EF2900FF2E2F /* Team.swift in Sources */,
+				ADC0D7162A263C3A00FF2E2F /* TeamCell.swift in Sources */,
 				ADC0D6F82A25EA4900FF2E2F /* ViewController.swift in Sources */,
 				ADC0D6F42A25EA4900FF2E2F /* AppDelegate.swift in Sources */,
 				ADC0D6F62A25EA4900FF2E2F /* SceneDelegate.swift in Sources */,
