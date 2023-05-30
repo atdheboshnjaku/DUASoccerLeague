@@ -1,4 +1,4 @@
-![DUASoccerLeague](https://raw.githubusercontent.com/atdheboshnjaku/Bingeer/a0c8e23f1360262c18870a88d5eb43a0de7880b5/Bingeer.svg)
+![DUASoccerLeague](https://github.com/atdheboshnjaku/DUASoccerLeague/blob/main/DuaSoccerLeague/Assets.xcassets/appScreenShot.imageset/appScreenShot.png)
 
 # DUA Soccer League Challenge
 
