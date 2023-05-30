@@ -1,24 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DuaSoccerLeague" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WjR-eX-97x">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWn-28-4J2">
+                                        <rect key="frame" x="15" y="120" width="15" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="bll-hS-kzT"/>
+                                            <constraint firstAttribute="width" constant="15" id="dzB-n6-5EW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0r-uE-hNj">
+                                        <rect key="frame" x="278" y="120" width="55" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="dr0-zY-hWT"/>
+                                            <constraint firstAttribute="height" constant="25" id="hPz-Ns-jjN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vr-Hp-F92">
+                                        <rect key="frame" x="338" y="120" width="35" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="prk-SY-nB1"/>
+                                            <constraint firstAttribute="height" constant="25" id="vcr-hg-xVD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t97-EA-Irb">
+                                        <rect key="frame" x="45" y="120" width="55" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="5P3-DT-lWw"/>
+                                            <constraint firstAttribute="width" constant="55" id="wlk-yt-5W9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DUA Soccer League" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFY-Ph-vWx">
+                                        <rect key="frame" x="105" y="79" width="183" height="26"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="3Vr-Hp-F92" secondAttribute="bottom" constant="5" id="4dR-fw-uSl"/>
+                                    <constraint firstAttribute="bottom" secondItem="t97-EA-Irb" secondAttribute="bottom" constant="5" id="D5e-88-nIJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="l0r-uE-hNj" secondAttribute="bottom" constant="5" id="JsY-4L-fqd"/>
+                                    <constraint firstItem="l0r-uE-hNj" firstAttribute="top" secondItem="xFY-Ph-vWx" secondAttribute="bottom" constant="15" id="PJy-D7-8yh"/>
+                                    <constraint firstAttribute="height" constant="150" id="SS5-9v-ycg"/>
+                                    <constraint firstItem="3Vr-Hp-F92" firstAttribute="leading" secondItem="l0r-uE-hNj" secondAttribute="trailing" constant="5" id="Tks-rx-C8D"/>
+                                    <constraint firstItem="xFY-Ph-vWx" firstAttribute="centerX" secondItem="WjR-eX-97x" secondAttribute="centerX" id="dW7-CC-5PW"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Vr-Hp-F92" secondAttribute="trailing" constant="20" id="gkD-8N-EUR"/>
+                                    <constraint firstItem="AWn-28-4J2" firstAttribute="leading" secondItem="WjR-eX-97x" secondAttribute="leading" constant="15" id="k97-RJ-vGl"/>
+                                    <constraint firstAttribute="bottom" secondItem="AWn-28-4J2" secondAttribute="bottom" constant="5" id="nHf-Vp-Tz2"/>
+                                    <constraint firstItem="t97-EA-Irb" firstAttribute="leading" secondItem="AWn-28-4J2" secondAttribute="trailing" constant="15" id="nNc-vO-PGc"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Wpp-xN-TAK">
+                                <rect key="frame" x="5" y="150" width="383" height="668"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wpp-xN-TAK" firstAttribute="top" secondItem="WjR-eX-97x" secondAttribute="bottom" id="0MD-o4-eph"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wpp-xN-TAK" secondAttribute="trailing" constant="5" id="B4R-dC-fLi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WjR-eX-97x" secondAttribute="trailing" id="Bhk-MX-nMK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wpp-xN-TAK" secondAttribute="bottom" id="do1-qO-wxT"/>
+                            <constraint firstItem="WjR-eX-97x" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fQb-uI-cWX"/>
+                            <constraint firstItem="Wpp-xN-TAK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="krr-uZ-Sby"/>
+                            <constraint firstItem="WjR-eX-97x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="u8t-Vs-fYc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Wpp-xN-TAK" id="hgs-kl-hc0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="-2.1126760563380285"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

@@ -16,26 +16,26 @@
                 <rect key="frame" x="0.0" y="0.0" width="397" height="90"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soccerball" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eaB-qC-rY6">
-                        <rect key="frame" x="45" y="16" width="60" height="58.666666666666671"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soccerball" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eaB-qC-rY6">
+                        <rect key="frame" x="35" y="21" width="50" height="48.666666666666671"/>
                         <color key="tintColor" red="0.1215686275" green="0.10980392160000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="60" id="bR7-2P-qBA"/>
-                            <constraint firstAttribute="width" constant="60" id="oDp-LO-yid"/>
+                            <constraint firstAttribute="height" constant="50" id="bR7-2P-qBA"/>
+                            <constraint firstAttribute="width" constant="50" id="oDp-LO-yid"/>
                         </constraints>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DYd-u3-ZIU">
-                        <rect key="frame" x="125" y="17.333333333333332" width="162" height="55.666666666666671"/>
+                        <rect key="frame" x="100" y="20.333333333333332" width="182" height="49.666666666666671"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doE-Gb-HR6">
-                                <rect key="frame" x="0.0" y="0.0" width="49" height="26"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <rect key="frame" x="0.0" y="0.0" width="41.666666666666664" height="22.333333333333332"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5us-cY-mVy">
-                                <rect key="frame" x="0.0" y="34" width="30.666666666666668" height="21.666666666666671"/>
-                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="18"/>
+                                <rect key="frame" x="0.0" y="30.333333333333336" width="27.333333333333332" height="19.333333333333336"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="16"/>
                                 <color key="textColor" red="0.1215686275" green="0.10980392160000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -62,7 +62,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2Y-Tb-3q6">
-                        <rect key="frame" x="297" y="32.666666666666664" width="35" height="25"/>
+                        <rect key="frame" x="292" y="32.666666666666664" width="35" height="25"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="35" id="o2r-nB-tOp"/>
                             <constraint firstAttribute="height" constant="25" id="wXf-KL-FVl"/>
@@ -73,20 +73,28 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="DYd-u3-ZIU" firstAttribute="leading" secondItem="eaB-qC-rY6" secondAttribute="trailing" constant="20" id="1vX-bE-2IY"/>
+                    <constraint firstItem="DYd-u3-ZIU" firstAttribute="leading" secondItem="eaB-qC-rY6" secondAttribute="trailing" constant="15" id="1vX-bE-2IY"/>
                     <constraint firstItem="Q2Y-Tb-3q6" firstAttribute="centerY" secondItem="vnI-Nb-639" secondAttribute="centerY" id="8IX-4u-f3E"/>
                     <constraint firstAttribute="trailing" secondItem="vnI-Nb-639" secondAttribute="trailing" constant="10" id="Eye-dI-SXB"/>
                     <constraint firstItem="XO4-j7-Vd5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="HLp-9Z-2ow"/>
-                    <constraint firstItem="eaB-qC-rY6" firstAttribute="leading" secondItem="XO4-j7-Vd5" secondAttribute="trailing" constant="10" id="Jeb-Ga-R7W"/>
+                    <constraint firstItem="eaB-qC-rY6" firstAttribute="leading" secondItem="XO4-j7-Vd5" secondAttribute="trailing" id="Jeb-Ga-R7W"/>
                     <constraint firstItem="vnI-Nb-639" firstAttribute="centerY" secondItem="XO4-j7-Vd5" secondAttribute="centerY" id="PbP-pq-wXK"/>
                     <constraint firstItem="Q2Y-Tb-3q6" firstAttribute="leading" secondItem="DYd-u3-ZIU" secondAttribute="trailing" constant="10" id="Qgn-0T-ow5"/>
                     <constraint firstItem="DYd-u3-ZIU" firstAttribute="centerY" secondItem="XO4-j7-Vd5" secondAttribute="centerY" id="gAC-hD-0Gf"/>
                     <constraint firstItem="XO4-j7-Vd5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="gU7-3T-ze7"/>
                     <constraint firstItem="eaB-qC-rY6" firstAttribute="centerY" secondItem="XO4-j7-Vd5" secondAttribute="centerY" id="nDw-60-SaV"/>
-                    <constraint firstItem="vnI-Nb-639" firstAttribute="leading" secondItem="Q2Y-Tb-3q6" secondAttribute="trailing" constant="20" id="x9a-g0-dmX"/>
+                    <constraint firstItem="vnI-Nb-639" firstAttribute="leading" secondItem="Q2Y-Tb-3q6" secondAttribute="trailing" constant="25" id="x9a-g0-dmX"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="coachNameLabel" destination="5us-cY-mVy" id="rqX-EO-csk"/>
+                <outlet property="tableCellNumberLabel" destination="XO4-j7-Vd5" id="sSs-PN-JTA"/>
+                <outlet property="teamGoalDifference" destination="vnI-Nb-639" id="36L-ka-LeY"/>
+                <outlet property="teamLogoImageView" destination="eaB-qC-rY6" id="A3B-kZ-g1H"/>
+                <outlet property="teamNameLabel" destination="doE-Gb-HR6" id="Pm0-mK-kac"/>
+                <outlet property="teamPointsLabel" destination="Q2Y-Tb-3q6" id="Te6-fx-Lk3"/>
+            </connections>
             <point key="canvasLocation" x="17.557251908396946" y="36.619718309859159"/>
         </tableViewCell>
     </objects>

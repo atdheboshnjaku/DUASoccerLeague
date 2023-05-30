@@ -12,6 +12,7 @@ struct LeagueManager {
     var teams: [Team] = []
     var fixtures: [[(homeTeam: Team, awayTeam: Team, homeGoals: Int, awayGoals: Int)]] = []
     
+    // Generating teams and also adding mutating to the method because we are inside a struct while trying to change team array
     mutating func generateTeams() {
         
         // Creating 20 teams
@@ -41,7 +42,7 @@ struct LeagueManager {
         // Give teams random attributes
         for (index, name) in teamNames.enumerated() {
             
-            let team = Team(id: index + 1, name: name, teamLogo: "logo", coach: "Coach \(index + 1)", stadiumName: "Stadium \(index + 1)", stadiumCapacity: 5000)
+            let team = Team(id: index + 1, name: name, teamLogo: "logo_\(index + 1)", coach: "Coach \(index + 1)", stadiumName: "Stadium \(index + 1)", stadiumCapacity: 5000)
             
             teams.append(team)
             
@@ -52,7 +53,7 @@ struct LeagueManager {
     mutating func generateFixtures() {
         
         // Shuffle the teams array so fixtures are random
-        var shuffledTeams = teams.shuffled()
+        let shuffledTeams = teams.shuffled()
         
         // Creating fixtures for each team
         for i in 0..<shuffledTeams.count {
